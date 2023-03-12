@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Moje hobby</title>
+		<meta name="description" content="Zapraszam na strone o przyborach rysowniczych i różnych technikach tworzenia rysunków"/>
+		<meta name="keywords" content="hobby, rysunek, malowanie, sztuka"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+	</head>
+	<body> 
+	<?php include 'index.php'?>
+		<div class="container">
+			<header>
+				<div id="logo"><a href="index.html" class="linkNav">Techniki artystyczne</a></div>
+				<nav id="nav">
+					<ol>
+						<li>Techniki tradycyjne
+							<ul>
+								<li><a href="Techniki_tradycyjne_opis.html" class="linkNav">Opis</a></li>
+								<li><a href="Techniki_tradycyjne.html" class="linkNav">Ankieta</a></li>
+							</ul>
+						</li>
+						<li><a href="Techniki_malarskie.html" class="linkNav">Techniki malarskie</a></li>
+						<li><a href="#" class="linkNav">Sklep</a></li>
+					</ol>
+				</nav>
+			</header>
+			<main id="galeria_php">
+				<h1>Nowy sklep już wkrótce!</h1>
+				<p>Już wkrótce nowy sklep artystyczny <em>ArtShop</em></p>
+				<form  action="index.php" method="POST" enctype="multipart/form-data">
+					Tytuł:
+					<input type="text" name="tytuł" /></br>
+					Autor:
+					<input type="text" name="autor" /></br>		
+					<input type="file" name="file"/></br>
+					<button type="submit" name="submit">Wyślij</button>
+				</form>
+				<?php
+foreach (['W', 'A', 'I'] as $k -> $v) echo "$v$k";
+?>
+			</main>
+			<footer id="footer">Techiniki artystyczne &copy;  Wszelkie prawa zastrzeżone!</footer>
+		</div>
+	</body>
+</html>

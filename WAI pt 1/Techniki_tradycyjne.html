@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<title>Moje hobby-Techniki malarskie</title>
+	<meta name="description" content="Zapraszam na strone o przyborach rysowniczych i różnych technikach tworzenia rysunków"/>
+	<meta name="keywords" content="hobby, rysunek, malowanie, sztuka"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+	<link rel="stylesheet" href="Techniki_tradycyjne.css" type="text/css"/>
+	<script src="animation.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script>
+   $( function() {
+    $( "#progressbar" ).progressbar({
+      value: 37
+    });
+   } );
+  </script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div id="logo"><a href="index.html" class="linkNav">Techniki artystyczne</a></div>
+				<nav>
+					<ol>
+						<li>Techniki tradycyjne
+							<ul>
+								<li><a href="Techniki_tradycyjne_opis.html" class="linkNav">Opis</a></li>
+							<li ><a href="Techniki_tradycyjne.html" class="linkNav">Konkurs</a></li>
+							</ul>
+							</li>
+						<li><a href="Techniki_malarskie.html" class="linkNav">Techniki malarskie</a></li>
+						<li><a href="Czy_zalogowana.php" class="linkNav" >Nasza galeria</a></li>
+					</ol>
+				</nav>
+			</header>
+		
+		<div id="konkurs">
+			<h1>Konkurs dla artystów!</h1>
+				<p>Marzy Ci się zacząc przygodę ze sztuka, ale nie jesteś pewny/a czy warto inwestować już w dobre wyposażenie? Wyręcze Cie w twoim dylemacie! Poniżej znajdje sie konkurs w którym możesz wźiąć udział.</p>
+				<p>Wypełij formularz i opisz jaka jest twoja ulubiona technika rysowania tradycyjnego. Do wygrania zestawy dla początkujacych!</p>
+				<h2>Wpisz swoją wiadomość!</h2>
+				<p>Ilość zgłoszeń</p>
+				<div id="progressbar">
+				<div id="progressbar1"></div></div>130/280
+				<p></p>
+				<form action="action.php" method="get" target="_blank">
+					Name:
+						<input type="text" name="Imie" id="Imie">
+					Nazwisko:
+						<input type="text" name="Nazwisko" id="Nazwisko">
+					E-mail:
+						<input type="text" name="Email" id="Email">
+					<p></p>
+					<textarea id="Textarea" cols="182" rows="20"></textarea>
+					<p></p>
+					<button onclick="Save()" type="button">Zapisz</button>
+					<button onclick="Load()" type="button">Wczytaj</button>
+					<button type="submit" class="button">Wyślij</button>
+				</form>
+		</div>
+		<footer>
+			Techniki artystyczne &copy; Wszelkie prawa zastrzeżone!
+		</footer>
+	</div>
+</body>

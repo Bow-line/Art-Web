@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Moje hobby</title>
+		<meta name="description" content="Zapraszam na strone o przyborach rysowniczych i różnych technikach tworzenia rysunków"/>
+		<meta name="keywords" content="hobby, rysunek, malowanie, sztuka"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<script src="animation.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+	</head>
+	<body> 
+		<div class="container">
+			<header>
+				<div id="logo">Techniki artystyczne 
+					<svg width="50px" height="50px" id="circle">
+							<circle cx="20" cy="35" r="10" style="stroke: white; stroke-width: 5; fill: black"  onclick="change()"/>
+					</svg>
+				</div>
+				<nav id="nav">
+					<ol>
+						<li>Techniki tradycyjne
+							<ul>
+								<li><a href="Techniki_tradycyjne_opis.html" class="linkNav">Opis</a></li>
+								<li><a href="Techniki_tradycyjne.html" class="linkNav">Konkurs</a></li>
+							</ul>
+						</li>
+						<li><a href="/tak/Techniki_malarskie.html" class="linkNav" >Techniki malarskie</a></li>
+						<li><a href="/Php-project/app/views/gallery.php" class="linkNav" >Nasza galeria</a></li>
+					</ol>
+				</nav>
+			</header>
+			<aside id="menu">
+				<h2 class="optionNav">Techniki tradycyjne</h2>
+					<ul>
+						<li>Grafit</li>
+						<li>Węgiel</li>
+						<li>Sepia</li>
+						<li>Tusz</li>
+					</ul>
+				<h2 class="optionNav">Techniki malarskie</h2>
+					<ul>
+						<li>Akwarele</li> 
+						<li>Olej</li>
+						<li>Gwasz</li>
+						<li>Akryl</li>
+					</ul>
+			</aside>
+
+			<div id="main">
+				<a href="Grafit.jpg" target="_blank" title="Rysunek wykonany grafitem"><img class="img" src="Grafit.jpg" alt="Grafit"/></a>
+				<a href="Węgiel.jpg" target="_blank" title="Rysunek wykonany węglem"><img class="img" src="Węgiel.jpg"  alt="Węgiel"/></a>
+				<a href="Sepia.jpg" target="_blank" title="Rysunek wykonany w sepi"><img class="img" src="Sepia.jpg" alt="Sepia" /></a>
+				<a href="Tusz.jpg" target="_blank" title="Rysunek wykonany tuszem"><img class="img" src="Tusz.jpg" alt="Tusz"></a>
+				<a href="Akwarele.jpg" target="_blank" title="Obraz wykonany akwarelami"><img class="img" src="Akwarele.jpg" alt="Akwarele"></a>
+				<a href="Oleje.jpg" target="_blank" title="Obraz wykonany farabami olejnymi"><img class="img" src="Oleje.jpg" alt="Oleje"></a>
+				<a href="Gwasz.jpg" target="_blank" title="Obraz wykonany gwaszem"><img class="img" src="Gwasz.jpg" alt="Gwasz"></a>
+				<a href="Akryl.jpg" target="_blank" title="Obraz wykonany akrylami"><img class="img" src="Akryl.jpg" alt="Akryl"></a>
+			</div>
+			<div id="disc">
+				<input id="button" type="button" value="Mała wiadomość na start" onclick="opis()">
+			</div>
+			<footer id="footer">Techiniki artystyczne &copy;  Wszelkie prawa zastrzeżone!</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,160 @@
+main
+{
+	font-size:25px;
+	float:left;
+	width:100%;
+	min-height:100%;
+	margin-left:0px;
+	padding-left:10px;
+	margin-bottom:10px;
+	color:white;
+	background-color: #7986CB;
+	padding:10px;
+}
+.rozwijane
+{
+	height:200px;
+}
+.up
+{
+	text-align:center;
+	display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: .5em .5em .5em .7em;
+    font-size: 100%;
+	background-color:#C0D9D9;
+}
+#error
+{
+	font-size:50px;
+	color:black;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#konkurs
+{
+	font-size:20px;
+	float:right;
+	width:100%;
+	min-height:500px;
+	margin-left:0px;
+	padding-left:10px;
+	color:white;
+	background-color: #7986CB;
+}
+#progressbar
+{
+	display:block;
+	height:40px;
+	text-align:left;
+	overflow:hidden;
+	font-size:1em;
+	background-color:white;
+	color:black;
+	width:90%;
+}
+#progressbar1
+{
+	display:block;
+	height:40px;
+	text-align:left;
+	overflow:hidden;
+	font-size:1em;
+	background-color:#9FA8DA;
+	color:black;
+	width:40%;
+	border:1px solid #9FA8DA;
+}
+ol
+{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	width:102%;
+	margin-right:0;
+    line-height:2em;
+    text-align:center;
+	height: 35px;
+	font-size: 23px;
+	text-align: center;
+}
+ol>li
+{
+	float:left;
+    background-color:#7986CB;
+    width:49%;
+    margin-left:5px;
+}
+ol a
+{
+	display:block;
+	text-decoration:none;
+	padding:0 5px;
+}
+ol > li > a:hover {
+   cursor: pointer;
+	color: #546E7A;
+}
+
+ol > li:hover {
+	background-color: #9FA8DA;
+	
+}
+nav ol>li>ul
+{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+ol > li:first-child 
+{
+	cursor: pointer;
+    margin-left:0;
+}
+
+ol > li > ul > li > a 
+{
+  border-top:1px solid #FFF;
+  margin-left:0;
+}
+
+
+ol > li > ul > li 
+{
+  background-color:#9da8e0;
+  margin-left:0;
+}
+
+ol > li > ul > li:hover 
+{
+  background-color:#c8cde8;
+}
+
+ol > li > ul > li:hover a
+ {
+  color:#546E7A;
+}
+ol > li > ul 
+{
+  display:none;
+}
+
+ol > li:hover > ul 
+{
+  display:block;
+  margin-left:5px;
+}
+@media (max-width: 768px)
+{
+	textarea#Textarea
+	{
+		width:70%;
+	}
+	div.konkurs
+	{
+		width:100%;
+	}
+}

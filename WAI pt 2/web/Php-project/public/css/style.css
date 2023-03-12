@@ -1,0 +1,358 @@
+body
+{
+    background-color:white;
+
+}
+* {
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Amatic SC', cursive;
+    height:100%;
+}
+#circle
+{
+    float:right;
+
+}
+
+#button
+{
+    color:white;
+    background-color:#C0D9D9;
+    font-family: 'Amatic SC', cursive;
+    width:180px;
+    font-size:20px;
+    border:none;
+}
+
+#container:after
+{
+    content: "";
+    clear: both;
+    display: block;
+}
+#logo
+{
+    background-color: #C0D9D9;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 50px;
+    font-family: 'Parisienne', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name:logos;
+    animation-duration:10s;
+}
+@keyframes logos {
+    from {color: white;}
+    to {color: black;}
+}
+nav
+{
+    float:left;
+    margin-top:5px;
+    margin-bottom:10px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    min-width:100%;
+}
+nav> ol
+{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    width:102%;
+    line-height:2em;
+    text-align:center;
+    height: 35px;
+    font-size: 23px;
+    text-align: center;
+}
+nav> ol>li
+{
+    float:left;
+    background-color:#7986CB;
+    width:32.4%;
+    margin-left:5px;
+}
+nav >ol a
+{
+    display:block;
+    text-decoration:none;
+    padding:0 5px;
+}
+nav >ol > li > a:hover
+{
+    cursor: pointer;
+    color: #546E7A;
+}
+nav> ol > li:hover
+{
+    background-color: #9FA8DA;
+}
+nav> ol>li>ul
+{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+nav >ol > li:first-child
+{
+    cursor: pointer;
+    margin-left:0;
+}
+
+nav >ol > li > ul > li > a
+{
+    border-top:1px solid #FFF;
+    margin-left:0;
+}
+
+
+nav> ol > li > ul > li
+{
+    background-color:#9da8e0;
+    margin-left:0;
+}
+
+nav> ol > li > ul > li:hover
+{
+    background-color:#c8cde8;
+}
+
+nav> ol > li > ul > li:hover a
+{
+    color:#546E7A;
+}
+nav> ol > li > ul
+{
+    display:none;
+}
+
+nav> ol > li:hover > ul
+{
+    position:absolute;
+    display:block;
+    float:left;
+    background-color:#7986CB;
+    width:32.4%;
+    height:2em;
+}
+
+aside
+{
+    float: left;
+    background-color: #7986CB;
+    width: 150px;
+    margin-bottom:5px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    height: 100%;
+}
+#main
+{
+    float: left;
+    margin-left:0;
+    margin-right:0;
+    padding:0;
+    text-align:center;
+    width:73%;
+
+}
+.img
+{
+    text-align:center;
+    display:inline-block;
+    width:24%;
+}
+
+.img img
+{
+    width:100%;
+}
+
+#disc
+{
+    float: right;
+    background-color: #7986CB;
+    width: 200px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 23px;
+    min-height: 100%;
+    font-family: 'Parisienne', cursive;
+}
+footer
+{
+    clear:  both;
+    background-color: #C0D9D9;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+    font-size:20px;
+    height:2em;
+}
+.optionNav:hover
+{
+    cursor: pointer;
+    color: #546E7A;
+}
+.linkNav
+{
+    color:white;
+    text-decoration:none;
+    display:block;
+}
+.linkNav:hover
+{
+    color: #546E7A;
+    text-decoration:none;
+    display:block;
+}
+ul>li
+{
+    margin-top:-5px;
+    margin-left:-20px;
+    padding:0;
+    font-size:20px;
+    list-style-type: none;
+}
+
+aside ul>li:before
+{
+    margin-right:0;
+    content: "✏  ";
+}
+#galeria_php
+{
+    font-size:25px;
+    float:left;
+    width:100%;
+    min-height:100%;
+    margin-left:0;
+    margin-bottom:10px;
+    color:white;
+    background-color: #7986CB;
+    padding:10px;
+    text-align:center;
+}
+
+#zdjecia
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    text-align: center;
+    padding: 0;
+}
+.photo
+{
+    display: inline-block;
+    width: 32%;
+}
+.photo img
+{
+    width: 100%;
+}
+
+.photo figure
+{
+    margin: 10px;
+}
+.error{
+    color: red;
+}
+@media (min-width: 768px) and
+(max-width: 992px)
+{
+    body
+    {
+        margin:0;
+    }
+    div.container
+    {
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+    nav
+    {
+        width:100%;
+        float:none;
+        margin-bottom:25px;
+        margin-top:5px;
+    }
+    #menu
+    {
+        float:left;
+        margin:0;
+    }
+    div.main>img{
+        width:20%;
+    }
+    #main
+    {
+        width:100%;
+        float:none;
+    }
+    div.disc
+    {
+        width:100%;
+        margin: 0;
+        float:none;
+    }
+}
+@media (max-width: 768px)
+{
+    body
+    {
+        margin:0;
+    }
+    div.container
+    {
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+    nav
+    {
+        width:100%;
+        float:none;
+        margin-bottom:25px;
+        margin-top:5px;
+    }
+    #menu
+    {
+        float:left;
+        margin:0;
+    }
+    div#main>img{
+        width:20%;
+    }
+    #main
+    {
+        width:100%;
+        float:none;
+    }
+    div#disc
+    {
+        width:100%;
+        margin: 0;
+        float:none;
+    }
+}
+
